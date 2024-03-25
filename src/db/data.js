@@ -1,4 +1,4 @@
-export const db = [
+export const guitarDB = [
     {
         id: 1,
         name: 'Lukather',
