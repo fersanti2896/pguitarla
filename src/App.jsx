@@ -7,6 +7,12 @@ import { guitarDB } from './db/data';
 function App() {
   //* useState
   const [data, setData] = useState(guitarDB);
+  const [cart, setCart] = useState([]);
+
+  function addToCart(item) {
+    console.log('Agregando');
+    setCart(prevCart => [...prevCart, item]);
+  }
   
   return (
     <>
@@ -21,6 +27,7 @@ function App() {
               <Guitar
                 key={guitar.id}
                 guitar={guitar}
+                addToCart={addToCart}
               />
             )
           }) }
