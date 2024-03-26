@@ -12,7 +12,7 @@ function App() {
   }
 
   //* useState
-  const [data, setData] = useState(guitarDB);
+  const [data] = useState(guitarDB);
   const [cart, setCart] = useState(initialCart);
   const MIN_ELEMENTS = 1;
 
